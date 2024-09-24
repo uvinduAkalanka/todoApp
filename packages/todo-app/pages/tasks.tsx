@@ -111,7 +111,6 @@ const TasksPage = () => {
             {sortedTodos.map((todo, index) => (
               <TableRow hover role="checkbox" tabIndex={-1} key={index}>
                 {columns.map((column) => {
-                  // Assert that column.id is a key of Todo
                   const value = todo[column.id as keyof Todo];
                   return (
                     <TableCell key={column.id} align={column.align}>
